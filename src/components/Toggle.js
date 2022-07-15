@@ -3,7 +3,9 @@ import  React, {useState} from "react"
 function Toggle() {
 
 const [isOn, setIsOn]=useState(false);
-
+function handleclick(){
+  setIsOn((isOn)=>! isOn)
+}
   return <button onClick={handleclick}>{isOn ? "ON" : "OFF"}</button>;
 }
 
