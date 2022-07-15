@@ -4,7 +4,7 @@ function Toggle() {
 
 const [isOn, setIsOn]=useState(false);
 
-  return <button>{isOn ? "ON" : "OFF"}</button>;
+  return <button onClick={handleclick}>{isOn ? "ON" : "OFF"}</button>;
 }
 
 export default Toggle;
